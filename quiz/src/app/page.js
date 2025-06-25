@@ -20,7 +20,7 @@ export default async function Home() {
           <li key={categorie.id}>
 
             <Link
-              href={`/${categorie.id}`}
+              href={`/question/${categorie.id}`}
             >
               {categorie.name}
             </Link>
