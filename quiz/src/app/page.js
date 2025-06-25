@@ -41,12 +41,21 @@ export default async function Home() {
       <p className="text-center text-1xl font-extrabold mb-12 text-gray-900">
         Hej og velkommen til vores fantastiske quiz, her kan du finde lidt af det hele alt efter hvad du er bedst til.
       </p>
-      <p className="whitespace-pre-line text-center">
+      <div className="whitespace-pre-line text-center">
         <strong>Regler:</strong>
-        {"\n"}1. Der kommer 4 svarmuligheder, og kun ét svar er rigtigt.
-        {"\n"}2. Svarer du forkert, går du videre til næste spørgsmål.
-        {"\n"}3. Du har kun ét forsøg pr. spørgsmål.
-      </p>
+        <ul>
+          <li>
+            1. Der kommer 4 svarmuligheder, og kun ét svar er rigtigt.
+          </li>
+          <li>
+            2. Svarer du forkert, går du videre til næste spørgsmål.
+          </li>
+          <li>
+            3. Du har kun ét forsøg pr. spørgsmål.
+          </li>
+        </ul>
+
+      </div>
 
       <div className="max-w-4xl mx-auto mb-10 items-center">
 
