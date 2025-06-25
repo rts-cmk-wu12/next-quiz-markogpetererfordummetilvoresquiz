@@ -50,6 +50,7 @@ setRealAnswer(data?.results[actual]?.correct_answer)
 <main className="bg-[url('https://static.wixstatic.com/media/c23ee4_8eb76a5d097f4425b3801b5420707127~mv2.gif')] grid-cols-1 grid-rows-1 h-lvh  bg-[cover] px-[10vw] flex flex-col">
     <div className="h-1 bg-blue-500 mt-10"> <div id="progress" className="h-1 bg-amber-300 w-[0%]"></div></div>
         <article className=" bg-[rgb(255,255,255)] mt-10 p-10 ">
+            <audio src="/set163.m4a" controls></audio>
         <h1 className="text-center">{data?.results?.[actual]?.question  }</h1>
         <div className="grid grid-rows-2 grid-cols-2 pt-16 gap-11">
          {answers?.map((element) =>{
