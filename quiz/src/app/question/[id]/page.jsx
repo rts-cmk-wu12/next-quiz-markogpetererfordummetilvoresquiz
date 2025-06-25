@@ -9,6 +9,7 @@ const [stats, setStats] = useState({correct: 0, false: 0})
 const [answers, setAnswers] = useState([])
 const [realAnswer, setRealAnswer] = useState("")
 const [actual, setActual] = useState(0)
+let test
 
 
 useEffect(()=>{
