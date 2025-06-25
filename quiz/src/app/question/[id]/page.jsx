@@ -1,4 +1,8 @@
-export default function Question() {
+export default async function Question() {
+
+
+    fetch()
+
     return (
         <main className="bg-[url('https://static.wixstatic.com/media/c23ee4_8eb76a5d097f4425b3801b5420707127~mv2.gif')] h-lvh  bg-[cover] px-[10vw] grid">
             <div className="h-1 bg-red-500 mt-10"> <div className="h-1 bg-amber-300"></div></div>
@@ -8,4 +12,6 @@ export default function Question() {
             </article>
         </main>
     )
+
+
 }
