@@ -52,10 +52,6 @@ export default async function Home({ searchParams: incomingSearchParams }) {
           <li>2. Svarer du forkert, går du videre til næste spørgsmål.</li>
           <li>3. Du har kun ét forsøg pr. spørgsmål.</li>
           <li>4. Der er 10 spørgsmål til hver kategori som du har muglighed for at svare på.</li>
-          <li>5. .</li>
-          <strong>Avarsel:
-            Der kan være højt musik eller irreterende musik og små gif med folk som kommer til skade så være forberedt på det hele
-          </strong>
         </ul>
       </div>
 
