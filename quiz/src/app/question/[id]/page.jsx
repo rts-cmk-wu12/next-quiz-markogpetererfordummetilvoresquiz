@@ -12,7 +12,9 @@ const [actual, setActual] = useState(0)
 let audio 
 let test
 setTimeout(playMusic, 2000)
-
+function shuffle(array) {
+  return array.sort(() => Math.random() - 0.5);
+}
 function playMusic(){
      audio = document.querySelector("#music")
      audio.loop = true 
@@ -33,7 +35,8 @@ useEffect(()=>{
 const response = await fetch(`https://opentdb.com/api.php?amount=10&category=${param?.id}&type=multiple`);
 let newData =  await response.json()
 setData(newData)
-setAnswers([...newData?.results?.[actual]?.incorrect_answers,newData?.results?.[actual]?.correct_answer ])
+let randomArray = shuffle([...newData?.results?.[actual]?.incorrect_answers,newData?.results?.[actual]?.correct_answer ])
+setAnswers(randomArray)
 setRealAnswer(newData?.results[actual]?.correct_answer)
 
 
@@ -49,7 +52,8 @@ useEffect(()=>{
     if(actual > 0 &&  actual < data?.results?.length -1 ){
 
     
-setAnswers([...data?.results?.[actual]?.incorrect_answers,data?.results[actual]?.correct_answer ])
+let randomArray = shuffle([...data?.results?.[actual]?.incorrect_answers,data?.results?.[actual]?.correct_answer ])
+setAnswers(randomArray)
 setRealAnswer(data?.results[actual]?.correct_answer)
 
 }
